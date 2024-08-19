@@ -24,7 +24,7 @@ In the first way of initialization (player1) we assign values to each of the att
 
 ## Passing structs to functions
 
-In Go we pass arguments as values to functions. In the following example, the print statement prings 2000, as the value of power is not changed.
+In Go we pass arguments as values to functions. In the following example, the print statement prints 2000, as the value of power is not changed.
 
 ```go
 package main

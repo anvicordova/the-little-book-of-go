@@ -24,7 +24,7 @@ Then, run the compiled program
 
 ### What is main?
 
-In Go, the entrypoint of a program in the function main withing a package main
+In Go, the entrypoint of a program in the function main within a package main
 
 ### Imports
 
