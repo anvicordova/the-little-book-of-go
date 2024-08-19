@@ -9,13 +9,22 @@ func main() {
 	// fmt.Println(scores)
 
 	betterScores := make([]int, 0, 10)
+	fmt.Println(len(betterScores))
+	fmt.Println(cap(betterScores))
 	betterScores = append(betterScores, 5)  // Sets the first element in this case
 	betterScores = append(betterScores, 12) // Sets the second element in this case
 	fmt.Println(betterScores)
+	fmt.Println(len(betterScores))
+	fmt.Println(cap(betterScores))
 
 	//Assigning an element in an specifix slice index
 	otherScore := make([]int, 0, 10)
+	fmt.Println(len(otherScore))
+	fmt.Println(cap(otherScore))
 	otherScore = otherScore[0:8] // Changes the slice lenght, it goes from 0 to (8-1 == 7)
 	otherScore[7] = 1234
 	fmt.Println(otherScore) // All the previous indexes have the default, in this case 0
+	fmt.Println(len(otherScore))
+	fmt.Println(cap(otherScore))
+
 }

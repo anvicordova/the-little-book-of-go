@@ -27,7 +27,7 @@ func main() {
 	copy(worst, scores[10:12]) // It only affects the two first elements of the slice
 	fmt.Println(worst)
 
-	// This will affect the original slice, as otherWors is a window to scores
+	// This will affect the original slice, as otherWorst is a window to scores
 
 	otherWorst := scores[:5]
 	fmt.Println(otherWorst)
@@ -39,4 +39,4 @@ func main() {
 
 }
 
-// Explanation: By using copy to fill the slice, the original slice is not affected
+// Explanation: By using copy to fill the slice, the original array is not affected

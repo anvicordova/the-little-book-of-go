@@ -63,8 +63,34 @@ Length --> Refers to the size of the slice
 len(slice) // Returns the length of a slice
 ```
 
-Capacity --> Referes to the size of the underlying array
+Capacity --> Refers to the size of the underlying array
 
 ```golang
 cap(slice) // Returns the capacity of a slice
 ```
+
+Set elements in a slice of length 0 by using `append`
+
+```golang
+betterScores := make([]int, 0, 10)
+betterScores = append(betterScores, 5) // Assigns 5 as the first element of the slice
+fmt.Println(len(betterScores))  // Prints 1, the new length of the slice
+```
+
+Assigning an element in an specific slice index
+
+```golang
+otherScore := make([]int, 0, 10)
+otherScore = otherScore[0:8] // Changes the slice length, it goes from 0 to (8-1 == 7)
+otherScore[7] = 1234
+fmt.Println(otherScore) // All the previous indexes have the default, in this case 0
+```
+
+Resizing a slice
+
+As we saw in the exammple above, we can
+grows capactity 2X
+
+// [x:][:X]
+
+// copy
