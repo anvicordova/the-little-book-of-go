@@ -86,11 +86,25 @@ otherScore[7] = 1234
 fmt.Println(otherScore) // All the previous indexes have the default, in this case 0
 ```
 
-Resizing a slice
+## Maps
 
-As we saw in the exammple above, we can
-grows capactity 2X
+Maps are data structures that hold keys pointing to values. They are also known as hashtables or dictionaries in other programming languages.
 
-// [x:][:X]
+We create a map with the `make` keyword
 
-// copy
+```golang
+myMap = make(map[string]int)
+myMap["key"]=100
+```
+
+For the keys size we use:
+
+```golang
+keysLen := len(myMap)
+```
+
+To delete a Key we use:
+
+```golang
+delete(myMap, "theKey")
+```
